@@ -5,10 +5,14 @@
 */
 
 :root {
-  --cubic: #3D3D6B;
-  --fcc: #B34444;
-  --accent: #FF8C42;
-  --azure: #4A90E2;
+  /* 8-Law Weave palette (Falco / Vadrashinetal) */
+  --cubic: #3D3D6B;       /* Fall of Neutral Events (11) — indigo */
+  --fcc: #B34444;          /* Geometric Essence (67) — brick red */
+  --accent: #FFD700;       /* Kaos (23) — yellow gold */
+  --sync: #FF8C42;         /* Synchronicity (89) — orange */
+  --azure: #4A90E2;        /* Arrow of Complexity (17) — azure */
+  --green: #52A352;        /* Sole Atom (19) — green */
+  --silver: #C0C0C0;       /* Time Matrix (29) — silver */
   --bg: #0c0c16;
   --bg-section: #10101e;
   --bg-card: rgba(255,255,255,0.04);
