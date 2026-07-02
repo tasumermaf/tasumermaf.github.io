@@ -42,9 +42,12 @@
         <em>contains</em> the cube: its 8 trivalent vertices ARE the cube’s corners.
         The 6 tetravalent vertices are the bridges that convert cubic topology into
         space-filling FCC. <strong>TeLoRA</strong> adds a learnable bridge matrix between
-        LoRA’s A and B projections. At n=6, a cybernetic feedback mechanism (the Steersman)
-        discovers rhombic dodecahedral geometry: 100% block-diagonal bridges, peak
-        coupling ratio 82,854:1, across four model families (1.1B–14B).</p>
+        LoRA’s A and B projections. A cybernetic feedback mechanism (the Steersman)
+        <em>programs</em> a chosen coupling topology into the bridge — the rhombic
+        dodecahedron is the canonical target, not a discovery: 100% block-diagonal bridges,
+        peak coupling ratio 82,854:1, across four model families (1.1B–14B), at benchmark
+        parity with standard LoRA. The mechanism is topology-agnostic, and we publish the
+        null results that prove the geometry does not emerge from data on its own.</p>
       <div class="paper-arc">
         <div class="arc-step">
           <div class="arc-num"><a href="https://github.com/tasumermaf/rhombic/blob/main/paper/rhombic.tex">Paper 1</a></div>
@@ -120,7 +123,7 @@
       </div>
       <div class="scale-callout">
         <div class="scale-card"><div class="scale-label">Micro</div>
-          <div class="scale-desc">Weight matrix: TeLoRA bridge discovers rhombic dodecahedral geometry</div></div>
+          <div class="scale-desc">Weight matrix: the Steersman programs rhombic dodecahedral geometry into the TeLoRA bridge</div></div>
         <div class="scale-card"><div class="scale-label">Meso</div>
           <div class="scale-desc">Research loop: evidence → tools → consulting → experiments</div></div>
         <div class="scale-card"><div class="scale-label">Macro</div>
@@ -135,7 +138,7 @@
       <div class="tool-cards">
         <div class="tool-card">
           <h3>rhombic</h3>
-          <div class="tool-meta">312 tests · MPL-2.0 · Python 3.10–3.12</div>
+          <div class="tool-meta">357 tests · MPL-2.0 · Python 3.10–3.12</div>
           <p>Lattice topology benchmarks proving cubic networks leave 6.1× connectivity
             on the table. TeLoRA neural module with cybernetic Steersman feedback.</p>
           <a href="https://github.com/tasumermaf/rhombic">GitHub</a> ·
