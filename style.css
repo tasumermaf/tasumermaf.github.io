@@ -5,7 +5,7 @@
 */
 
 :root {
-  /* 8-Law Weave palette (Falco / Vadrashinetal) */
+  /* 8-Law Weave palette */
   --cubic: #3D3D6B;       /* Fall of Neutral Events (11) — indigo */
   --fcc: #B34444;          /* Geometric Essence (67) — brick red */
   --accent: #FFD700;       /* Kaos (23) — yellow gold */
@@ -238,6 +238,59 @@ blockquote cite {
   font-size: 1.5rem;
   color: var(--text-dim);
   opacity: 0.4;
+}
+
+/* ═══ RELEASED RESEARCH ═══ */
+
+.paper-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.paper-card {
+  padding: 1.8rem;
+  background: var(--bg-card);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.paper-card .paper-tag {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--sync);
+  margin-bottom: 0.5rem;
+}
+
+.paper-card h3 {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+.paper-card .paper-sub {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--text-dim);
+  margin-bottom: 0.9rem;
+  line-height: 1.5;
+}
+
+.paper-card p {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+}
+
+.paper-card .paper-links {
+  font-size: 0.82rem;
+  margin-bottom: 0;
 }
 
 /* ═══ PIONEERS ═══ */
@@ -490,6 +543,10 @@ footer {
   }
 
   .tool-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .paper-cards {
     grid-template-columns: 1fr;
   }
 

@@ -70,6 +70,55 @@
     </div>
   </section>
 
+  <section id="research">
+    <div class="section-inner">
+      <h2>Released Research</h2>
+      <p>Two papers are out. Both were pre-registered before the data existed,
+        audited adversarially by fresh-context agents, and published with their
+        artifacts — protocol, code, raw logs, and the audit ledger, dispositions
+        included. Where a prediction failed, the failure is in the paper.</p>
+      <div class="paper-cards">
+        <div class="paper-card">
+          <div class="paper-tag">Asset-1 · July 2026</div>
+          <h3><a href="/rhombic/gauge/">The Gauge Is the Obstacle</a></h3>
+          <div class="paper-sub">Task Identity, Cross-Family Transfer, and
+            Merge-Conflict Prediction from Adapter Weights Alone</div>
+          <p>A pre-registered bank of 480 LoRA adapters — two model families ×
+            six tasks × forty seeds — read out by weights alone. Raw adapter
+            weights fail to identify the training task (0.0792 / 0.1375 against
+            chance 0.1667); GL(<em>r</em>)-gauge-canonical features reach 1.0000.
+            The obstacle is the parameterization, not the information. Weight-only
+            merge-conflict prediction reaches group-aware AUC 0.995 / 0.962. Two
+            of five pre-registered outcomes went against us — including a
+            no-transfer prediction refuted by our own triviality control — and
+            they are the credibility of the other three.</p>
+          <p class="paper-links"><a href="/rhombic/gauge/">Read</a> ·
+            <a href="/rhombic/gauge/rhombic-asset1.pdf">PDF</a> ·
+            <a href="https://huggingface.co/datasets/timotheospaul/rhombic-asset1-features">Dataset</a> ·
+            <a href="https://github.com/tasumermaf/rhombic/blob/main/paper/audit/round-2/ADVERSARY_LADDER_LEDGER_ASSET1.md">Audit ledger</a></p>
+        </div>
+        <div class="paper-card">
+          <div class="paper-tag">XR-001 · July 2026</div>
+          <h3><a href="/rhombic/typed-state/">Typed State Beats Prose</a></h3>
+          <div class="paper-sub">A Pre-Registered Measurement of Numeric
+            Corruption Under Agent Context Compaction</div>
+          <p>When an agent compacts its own context, the format of the compacted
+            state is chosen by convention rather than measurement. At matched
+            token budgets, prose re-encoding corrupts
+            <span class="hero-stat">36.4%</span> of numeric facts where typed
+            state blocks corrupt 9.4% — paired exact McNemar
+            <em>p</em> = 3.524×10<sup>−21</sup>, direction unanimous across three
+            models. The loss happens at write time: typed blocks retain 99.8% of
+            values across cascaded checkpoints, prose 65.2%. Never re-narrate a
+            number when a quotable typed slot will do.</p>
+          <p class="paper-links"><a href="/rhombic/typed-state/">Read</a> ·
+            <a href="https://github.com/tasumermaf/rhombic/blob/main/paper/rhombic-xr001.pdf">PDF</a> ·
+            <a href="https://github.com/tasumermaf/rhombic/blob/main/results/XR-001-externalization-pilot/PROTOCOL.md">Pre-registration</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="steersman">
     <div class="section-inner">
       <h2>The Steersman</h2>
@@ -138,18 +187,20 @@
       <div class="tool-cards">
         <div class="tool-card">
           <h3>rhombic</h3>
-          <div class="tool-meta">357 tests · MPL-2.0 · Python 3.10–3.12</div>
+          <div class="tool-meta">827 tests · MPL-2.0 · Python 3.10–3.12</div>
           <p>Lattice topology benchmarks proving cubic networks leave 6.1× connectivity
-            on the table. TeLoRA neural module with cybernetic Steersman feedback.</p>
+            on the table. TeLoRA neural module with cybernetic Steersman feedback.
+            Both released papers live here.</p>
           <a href="https://github.com/tasumermaf/rhombic">GitHub</a> ·
           <a href="https://pypi.org/project/rhombic/">PyPI</a> ·
           <a href="https://huggingface.co/spaces/timotheospaul/rhombic">Demo</a>
         </div>
         <div class="tool-card">
           <h3>The Adversary</h3>
-          <div class="tool-meta">7-round audit · MPL-2.0</div>
-          <p>Agent-driven adversarial paper audit framework. 232 findings across 7 rounds,
-            87 fixed, zero critical remaining.</p>
+          <div class="tool-meta">v2 · CHECK/FIND/VERIFY · MPL-2.0</div>
+          <p>Agent-driven adversarial paper audit framework, now a three-stage
+            engine. Its Asset-1 ladder ran 7 rounds across 19 lenses: 117 confirmed
+            findings, 92 fixed, every disposition on record.</p>
           <a href="https://github.com/tasumermaf/the-adversary">GitHub</a>
         </div>
         <div class="tool-card">
