@@ -3,302 +3,326 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TASUMER MAF</title>
-  <meta name="description" content="Cybernetics consulting. Lattice topology research. Open tools.">
+  <title>TASUMER MAF · Research house</title>
+  <meta name="description" content="TASUMER MAF is an independent research house examining computation's unexamined defaults. Pre-registered studies, open tools, a book, and an exact-state laboratory.">
+  <meta property="og:title" content="TASUMER MAF">
+  <meta property="og:description" content="An independent research house examining computation's unexamined defaults.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tasumermaf.com/">
+  <link rel="icon" type="image/svg+xml" href="assets/emblem.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&amp;family=Inter:wght@400;500;600&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <section id="hero">
-    <div class="hero-content">
-      <h1>TASUMER MAF</h1>
-      <p class="hero-greek">κυβερνήτης — the steersman</p>
-      <p class="hero-tagline">Cybernetics consulting. Lattice topology research. Open tools.</p>
-    </div>
-    <div class="hero-canvas" id="rd-canvas"></div>
-  </section>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="assets/emblem.svg" alt=""><span>TASUMER MAF</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#crossroads">Crossroads</a>
+      <a href="calculemicha/">Calculemicha</a>
+      <a href="#method">Method</a>
+      <a href="#tools">Tools</a>
+      <a href="#work">Work with us</a>
+    </nav>
+  </div>
+</header>
 
-  <section id="thesis">
-    <div class="section-inner">
-      <h2>Examine Every Default</h2>
-      <p>Every computation — neural networks, simulations, databases — defaults to
-        <strong>cubic lattice topology</strong>: 6-connected grids. Each node talks to
-        6 neighbors along 3 axis-aligned directions. It is the geometry of spreadsheets,
-        voxel grids, and attention heads. Nobody chose it. It was just there.</p>
-      <p>The <strong>FCC lattice</strong> gives each node 12 neighbors along 6
-        face-diagonal directions. Its Voronoi cell is the <em>rhombic dodecahedron</em> —
-        a 14-vertex polyhedron that tessellates all of 3D space. Kepler proved it packs
-        spheres optimally in 1611. Hales confirmed it in 2005. Under real-world
-        heterogeneous conditions, it provides <span class="hero-stat">6.1×</span>
-        the algebraic connectivity of the cube.</p>
-      <div class="thesis-stat">
-        <div class="big-num">6.1×</div>
-        <div class="big-label">algebraic connectivity under corpus weights (Paper 2)</div>
-      </div>
-      <p>The cube is not the enemy — it is the skeleton. The rhombic dodecahedron
-        <em>contains</em> the cube: its 8 trivalent vertices ARE the cube’s corners.
-        The 6 tetravalent vertices are the bridges that convert cubic topology into
-        space-filling FCC. <strong>TeLoRA</strong> adds a learnable bridge matrix between
-        LoRA’s A and B projections. A cybernetic feedback mechanism (the Steersman)
-        <em>programs</em> a chosen coupling topology into the bridge — the rhombic
-        dodecahedron is the canonical target, not a discovery: 100% block-diagonal bridges,
-        coupling ratios of order 10⁴–10⁵:1 (provisional pending controller re-verification), across four model families (1.1B–14B), at benchmark
-        parity with standard LoRA. The mechanism is topology-agnostic, and we publish the
-        null results that prove the geometry does not emerge from data on its own.</p>
-      <div class="paper-arc">
-        <div class="arc-step">
-          <div class="arc-num"><a href="https://github.com/tasumermaf/rhombic/blob/main/paper/rhombic.tex">Paper 1</a></div>
-          <div class="arc-q">“What happens when you replace the cube?”</div>
-          <div class="arc-a">The comparison.</div>
-        </div>
-        <div class="arc-arrow">→</div>
-        <div class="arc-step">
-          <div class="arc-num"><a href="https://github.com/tasumermaf/rhombic/blob/main/paper/rhombic-paper2.tex">Paper 2</a></div>
-          <div class="arc-q">“Does structure amplify or attenuate?”</div>
-          <div class="arc-a">The mechanism.</div>
-        </div>
-        <div class="arc-arrow">→</div>
-        <div class="arc-step">
-          <div class="arc-num"><a href="https://github.com/tasumermaf/rhombic/blob/main/paper/rhombic-paper3.tex">Paper 3</a></div>
-          <div class="arc-q">“What happens when you embrace the cube?”</div>
-          <div class="arc-a">The programming.</div>
-        </div>
+<main>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Independent research house · Los Angeles</p>
+      <h1>We examine the defaults that computation never chose.</h1>
+      <p class="lede">The grid inside every chip. The prose an agent writes when it summarizes itself. The assumption that a reading which looks the same means a state that is the same. We test each one, publish what we find with its evidence, and say so when a result goes against us.</p>
+      <p class="greek">κυβερνήτης, the steersman: the one who reads the wake and corrects the course.</p>
+      <div class="actions">
+        <a class="btn primary" href="#publications">Read the research</a>
+        <a class="btn" href="#work">Work with us</a>
       </div>
     </div>
-  </section>
+    <img class="hero-emblem" src="assets/emblem.svg" alt="A rhombic dodecahedron, the twelve-faced cell that fills space, with one face filled">
+  </div>
+</section>
 
-  <section id="research">
-    <div class="section-inner">
-      <h2>Released Research</h2>
-      <p>Two papers are out. Both were pre-registered before the data existed,
-        audited adversarially by fresh-context agents, and published with their
-        artifacts — protocol, code, raw logs, and the audit ledger, dispositions
-        included. Where a prediction failed, the failure is in the paper.</p>
-      <div class="paper-cards">
-        <div class="paper-card">
-          <div class="paper-tag">Asset-1 · July 2026</div>
-          <h3><a href="/rhombic/gauge/">The Gauge Is the Obstacle</a></h3>
-          <div class="paper-sub">Task Identity, Cross-Family Transfer, and
-            Merge-Conflict Prediction from Adapter Weights Alone</div>
-          <p>A pre-registered bank of 480 LoRA adapters — two model families ×
-            six tasks × forty seeds — read out by weights alone. Raw adapter
-            weights fail to identify the training task (0.0792 / 0.1375 against
-            chance 0.1667); GL(<em>r</em>)-gauge-canonical features reach 1.0000.
-            The obstacle is the parameterization, not the information. Weight-only
-            merge-conflict prediction reaches group-aware AUC 0.995 / 0.962. Two
-            of five pre-registered outcomes went against us — including a
-            no-transfer prediction refuted by our own triviality control — and
-            they are the credibility of the other three.</p>
-          <p class="paper-links"><a href="/rhombic/gauge/">Read</a> ·
-            <a href="/rhombic/gauge/rhombic-asset1.pdf">PDF</a> ·
-            <a href="https://huggingface.co/datasets/timotheospaul/rhombic-asset1-features">Dataset</a> ·
-            <a href="https://github.com/tasumermaf/rhombic/blob/main/paper/audit/round-2/ADVERSARY_LADDER_LEDGER_ASSET1.md">Audit ledger</a></p>
-        </div>
-        <div class="paper-card">
-          <div class="paper-tag">XR-001 · July 2026</div>
-          <h3><a href="/rhombic/typed-state/">Typed State Beats Prose</a></h3>
-          <div class="paper-sub">A Pre-Registered Measurement of Numeric
-            Corruption Under Agent Context Compaction</div>
-          <p>When an agent compacts its own context, the format of the compacted
-            state is chosen by convention rather than measurement. At matched
-            token budgets, prose re-encoding corrupts
-            <span class="hero-stat">36.4%</span> of numeric facts where typed
-            state blocks corrupt 9.4% — paired exact McNemar
-            <em>p</em> = 3.524×10<sup>−21</sup>, direction unanimous across three
-            models. The loss happens at write time: typed blocks retain 99.8% of
-            values across cascaded checkpoints, prose 65.2%. Never re-narrate a
-            number when a quotable typed slot will do.</p>
-          <p class="paper-links"><a href="/rhombic/typed-state/">Read</a> ·
-            <a href="https://github.com/tasumermaf/rhombic/blob/main/paper/rhombic-xr001.pdf">PDF</a> ·
-            <a href="https://github.com/tasumermaf/rhombic/blob/main/results/XR-001-externalization-pilot/PROTOCOL.md">Pre-registration</a></p>
-        </div>
+<section id="research">
+  <div class="wrap">
+    <p class="section-label">Research</p>
+    <h2>Three lines of work</h2>
+    <p class="section-lede">Each line begins with a habit that is rarely questioned, and asks what a measurement says about it.</p>
+    <div class="grid-3">
+      <article class="card ox">
+        <p class="meta">Geometry</p>
+        <h3>The shape of the cell</h3>
+        <p>Computation defaults to the cubic grid, where each node has six neighbours. The face-centred cubic lattice gives each node twelve. At matched node count its average paths are 30% shorter and its algebraic connectivity 2.3 to 2.5 times higher, at about twice the edges.</p>
+        <p>The same program reads what fine-tuned adapters have learned from their weights alone.</p>
+        <p class="links"><a href="#publications">Papers</a><a href="https://github.com/tasumermaf/rhombic">rhombic</a></p>
+      </article>
+      <article class="card">
+        <p class="meta">State</p>
+        <h3>Exact return</h3>
+        <p>A system can show the same reading twice while the state behind it has changed. Crossroads State keeps the whole field, the order in which it is read and its reference address together, so that a return can be checked exactly and not inferred from appearances.</p>
+        <p class="links"><a href="#crossroads">Crossroads</a><a href="https://huggingface.co/spaces/timotheospaul/crossroads-laboratory">Laboratory</a></p>
+      </article>
+      <article class="card ox">
+        <p class="meta">Foundations</p>
+        <h3>Habits of the machine</h3>
+        <p><em>Calculemicha</em> is a book in sixteen stations. It walks from Leibniz's dream of settling arguments by calculation to the question of what makes a physical system a computer, and at each station asks which parts of computation are necessary and which are habits.</p>
+        <p class="links"><a href="calculemicha/">The book</a><a href="https://www.youtube.com/playlist?list=PLLnBXuxdEck0">Audiobook</a></p>
+      </article>
+    </div>
+    <p class="note" style="margin-top:26px;max-width:46em">On the lattice result, the scope matters. Our own pre-registered control showed that a random rewiring of the same edges beats the lattice on connectivity, but only with wires that grow without bound. The claim that stands is narrower: among arrangements that can be built with local wiring, the twelve-neighbour lattice dominates the cube. Where a task has no spatial metric, our null results say the geometry does not help.</p>
+  </div>
+</section>
+
+<section id="publications" class="tint">
+  <div class="wrap">
+    <p class="section-label">Publications</p>
+    <h2>Released work</h2>
+    <p class="section-lede">Each release carries its protocol, code, data and audit record. All are published from our own repositories and audited internally. None has yet appeared at a formal venue.</p>
+    <table class="pubs">
+      <thead><tr><th>Date</th><th>Work</th><th>Read</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>25 Oct 2026</td>
+          <td><span class="title">Exact State, Partial Observation, and Reversible Recovery</span>
+            <span class="sub">A reproducible synthetic test environment</span>
+            A small exact-arithmetic instrument that separates what a window shows from the state that produces it. In 512 seeded sequences of 40 steps on 16 synthetic fields of 81 addresses, the full checkpoint was restored exactly in 512 of 512, and an independently written oracle agreed at 20,480 of 20,480 trace steps. One reversed-order journal reached the same endpoint and is kept in the record.
+            <br><span class="status">Technical report 0.1.0 · release candidate</span></td>
+          <td><a href="https://github.com/tasumermaf/crossroads-state/blob/main/paper/exact-state-recovery.pdf">PDF</a><a href="https://github.com/tasumermaf/crossroads-state">Code</a><a href="https://timotheospaul.substack.com/p/what-must-survive-the-journey">Essay</a></td>
+        </tr>
+        <tr>
+          <td>1 Sep 2026</td>
+          <td><span class="title">Calculemicha: Habits of the Machine</span>
+            <span class="sub">Sixteen stations, ten assumptions, one law</span>
+            A book on the installed defaults of computing, written by Meridian for TASUMER MAF. Published in full as text, and as a narrated series of eighteen recordings.
+            <br><span class="status">Book · complete</span></td>
+          <td><a href="calculemicha/">Contents</a><a href="https://timotheospaul.substack.com/p/calculemicha-habits-of-the-machine">Read</a><a href="https://www.youtube.com/playlist?list=PLLnBXuxdEck0">Listen</a></td>
+        </tr>
+        <tr>
+          <td>29 Jul 2026</td>
+          <td><span class="title">The Gauge Is the Obstacle</span>
+            <span class="sub">Task identity, cross-family transfer and merge-conflict prediction from adapter weights alone</span>
+            A pre-registered bank of 480 LoRA adapters: two model families, six tasks, forty seeds. Raw weights fail to identify the training task (0.0792 and 0.1375 against chance 0.1667). Gauge-canonical features reach 1.0000. The same features predict merge conflict at AUC 0.995 and 0.962. Two of five pre-registered outcomes went against us, and both are in the paper. Timothy Bielec and Minta Carlson.
+            <br><span class="status">Paper · Asset-1</span></td>
+          <td><a href="/rhombic/gauge/">Read</a><a href="/rhombic/gauge/rhombic-asset1.pdf">PDF</a><a href="https://huggingface.co/datasets/timotheospaul/rhombic-asset1-features">Data</a><a href="https://github.com/tasumermaf/rhombic/blob/main/paper/audit/round-2/ADVERSARY_LADDER_LEDGER_ASSET1.md">Audit</a></td>
+        </tr>
+        <tr>
+          <td>14 Jul 2026</td>
+          <td><span class="title">Typed State Beats Prose</span>
+            <span class="sub">A pre-registered measurement of numeric corruption under agent context compaction</span>
+            When an agent summarizes its own context, prose corrupts 36.4% of numeric facts where typed state blocks of the same length corrupt 9.4% (paired exact McNemar <em>p</em> = 3.524 × 10<sup>−21</sup>, the same direction in all three models). The loss happens at the moment of writing: typed blocks retain 99.8% of values across cascaded checkpoints, prose 65.2%. Timothy Bielec and Minta Carlson.
+            <br><span class="status">Paper · XR-001</span></td>
+          <td><a href="/rhombic/typed-state/">Read</a><a href="https://github.com/tasumermaf/rhombic/blob/main/paper/rhombic-xr001.pdf">PDF</a><a href="https://github.com/tasumermaf/rhombic/blob/main/results/XR-001-externalization-pilot/PROTOCOL.md">Protocol</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note" style="margin-top:22px">In preparation: <em>The Shape of the Cell</em>, the lattice comparison across graph theory, spatial operations, signal processing and retrieval, and three working drafts on structured weights and adapter topology. Their corrections and retractions are tracked in the open in the <a href="https://github.com/tasumermaf/rhombic">rhombic</a> repository.</p>
+  </div>
+</section>
+
+<section id="crossroads">
+  <div class="wrap">
+    <p class="section-label">Crossroads</p>
+    <h2>Pattern, persistence, transit, return</h2>
+    <div class="split">
+      <div>
+        <p>Imagine a board of eighty-one numbers and a small window that shows only some of them. Move the window and what you see changes while the board does not. Change a number outside the window and the board changes while what you see does not.</p>
+        <p>Crossroads gives these things separate names: the <strong>field</strong>, the <strong>reader</strong> and the <strong>reference</strong>. Together they are the state, and the record of what was done to it is the journal. A reading can agree, the full state can agree, and the route can agree. Each needs its own evidence, and the instrument tests each one.</p>
+        <ul class="linklist">
+          <li><a href="https://huggingface.co/spaces/timotheospaul/crossroads-laboratory">The Laboratory</a> <span>· work the field, the reader and the operations yourself</span></li>
+          <li><a href="https://timotheospaul-crossroads-laboratory.static.hf.space/geometry--journey.html">Illuminated Geometry</a> <span>· the journey in seventeen scenes, at your own pace</span></li>
+          <li><a href="https://github.com/tasumermaf/crossroads-state">crossroads-state</a> <span>· the engine, the paper and the exact tests</span></li>
+          <li><a href="https://timotheospaul.substack.com/p/what-must-survive-the-journey">What Must Survive the Journey</a> <span>· the essay</span></li>
+        </ul>
+      </div>
+      <div>
+        <a class="film" href="https://www.youtube.com/watch?v=ZIqhh20DGCE"><img src="assets/crossroads-film.png" width="1280" height="720" loading="lazy" alt="Title frame of the film: The Way Back, Book of Crossroads, with a crystal drawn in gold, violet and green and a red thread"></a>
+        <p class="caption"><a href="https://www.youtube.com/watch?v=ZIqhh20DGCE">The Mathematics of Return</a>, the Book of Crossroads film, Revised Edition, 10 minutes.</p>
       </div>
     </div>
-  </section>
+    <p class="note" style="margin-top:30px;max-width:48em">The code study tests exact recovery on public synthetic fields. The film and the Illuminated Geometry are an authored geometric interpretation. These are distinct parts of the work. The study did not evaluate language-model performance, compression or physical information transfer. <em>Book of Crossroads</em>, the manuscript behind this work, is in private circulation.</p>
+  </div>
+</section>
 
-  <section id="crossroads" aria-labelledby="crossroads-title">
-    <div class="section-inner">
-      <p class="crossroads-label">Book of Crossroads</p>
-      <h2 id="crossroads-title">Pattern, Persistence, Transit, Return</h2>
-      <a class="crossroads-image" href="https://www.youtube.com/watch?v=ZIqhh20DGCE"><img src="assets/crossroads-film.png" width="1280" height="720" loading="lazy" alt="The Way Back: the Crossroads crystal in purple, green and gold, with its red thread"></a>
-      <p>A laboratory, a reproducible state-recovery tool and a visual journey.
-        Change an 81-address field, carry its reference, then check the return
-        against the entire state. Explore the geometry at your own pace.</p>
-      <div class="crossroads-links">
-        <a href="https://huggingface.co/spaces/timotheospaul/crossroads-laboratory">Enter the laboratory</a>
-        <a href="https://timotheospaul-crossroads-laboratory.static.hf.space/geometry--journey.html">Illuminated Geometry</a>
-        <a href="https://github.com/tasumermaf/crossroads-state">Code, paper &amp; exact tests</a>
-        <a href="https://www.youtube.com/watch?v=ZIqhh20DGCE">Watch the film · Revised Edition</a>
-      </div>
-      <p class="crossroads-note">The code study tests exact recovery on public synthetic fixtures.
-        The animated journey is an authored geometric interpretation. These are distinct
-        parts of the work, with their assumptions and checks available to inspect.
-        Noncommercial research is permitted under the research license;
-        all enterprise work requires written permission and payment.</p>
-    </div>
-  </section>
-
-  <section id="steersman">
-    <div class="section-inner">
-      <h2>The Steersman</h2>
-      <p>Cybernetics was born as the science of communication and control — the study
-        of how systems regulate themselves through circular causation, not through command.
-        TASUMER MAF applies this principle to AI systems architecture, organizational
-        design, and computational infrastructure.</p>
-      <div class="pioneers">
-        <div class="pioneer">
-          <div class="pioneer-meta"><div class="pioneer-name">Wiener</div><div class="pioneer-year">1948</div></div>
-          <div class="pioneer-body"><p><span class="pioneer-concept">Communication and control.</span>
-            Named the field for the steersman who reads the wake and adjusts the rudder.
-            Governance emerges from feedback, not force.</p></div>
-        </div>
-        <div class="pioneer">
-          <div class="pioneer-meta"><div class="pioneer-name">Ashby</div><div class="pioneer-year">1956</div></div>
-          <div class="pioneer-body"><p><span class="pioneer-concept">Requisite Variety.</span>
-            A regulator must have at least as much variety as the system it regulates.
-            12 connections absorb what 6 cannot.</p></div>
-        </div>
-        <div class="pioneer">
-          <div class="pioneer-meta"><div class="pioneer-name">Beer</div><div class="pioneer-year">1959</div></div>
-          <div class="pioneer-body"><p><span class="pioneer-concept">Viable System Model.</span>
-            Organizational topology IS architecture topology. The structure of a viable
-            system mirrors the structure of the environment it must absorb.</p></div>
-        </div>
-        <div class="pioneer">
-          <div class="pioneer-meta"><div class="pioneer-name">Bateson</div><div class="pioneer-year">1972</div></div>
-          <div class="pioneer-body"><p><span class="pioneer-concept">Ecology of Mind.</span>
-            The observer is part of the system. The map participates in the territory.
-            The tool that measures connectivity is itself a connected system.</p></div>
-        </div>
-        <div class="pioneer">
-          <div class="pioneer-meta"><div class="pioneer-name">Maturana &amp; Varela</div><div class="pioneer-year">1973</div></div>
-          <div class="pioneer-body"><p><span class="pioneer-concept">Autopoiesis.</span>
-            A system that produces the components that produce the system.
-            Research produces evidence produces tools produces research.</p></div>
-        </div>
-        <div class="pioneer">
-          <div class="pioneer-meta"><div class="pioneer-name">Pask</div><div class="pioneer-year">1975</div></div>
-          <div class="pioneer-body"><p><span class="pioneer-concept">Conversation Theory.</span>
-            Knowledge emerges through structured dialogue between participants.
-            Human-AI collaboration as Paskian conversation.</p></div>
-        </div>
-        <div class="pioneer">
-          <div class="pioneer-meta"><div class="pioneer-name">Von Foerster</div><div class="pioneer-year">1995</div></div>
-          <div class="pioneer-body"><p><span class="pioneer-concept">Ethics of self-reference.</span>
-            “Act always so as to increase the number of choices.”
-            Open methodology expands the space. Proprietary results fund the expansion.</p></div>
+<section id="calculemicha" class="tint">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="section-label">Calculemicha</p>
+        <h2>Which parts of computation are necessary, and which are habits?</h2>
+        <p>The title folds alchemy into Leibniz's <em>calculemus</em>, "let us calculate". The book's working theory is that truth is what survives transport, and that an invariant is something maintained, not something possessed.</p>
+        <p>It is published whole: seventeen chapters to read and eighteen recordings to hear, from the preface to the observer problem. The narration uses a disclosed digital voice.</p>
+        <div class="actions">
+          <a class="btn primary" href="calculemicha/">The sixteen stations</a>
+          <a class="btn" href="https://www.youtube.com/playlist?list=PLLnBXuxdEck0">Listen on YouTube</a>
+          <a class="btn" href="https://timotheospaul.substack.com">Read on Substack</a>
         </div>
       </div>
-      <div class="scale-callout">
-        <div class="scale-card"><div class="scale-label">Micro</div>
-          <div class="scale-desc">Weight matrix: the Steersman programs rhombic dodecahedral geometry into the TeLoRA bridge</div></div>
-        <div class="scale-card"><div class="scale-label">Meso</div>
-          <div class="scale-desc">Research loop: evidence → tools → consulting → experiments</div></div>
-        <div class="scale-card"><div class="scale-label">Macro</div>
-          <div class="scale-desc">Enterprise: the organization produces the research that produces the organization</div></div>
+      <div class="figure">
+        <table class="stations teaser">
+          <tr><td>01</td><td>The Dream of Mechanized Reason</td></tr>
+          <tr><td>05</td><td>Information Without Meaning</td></tr>
+          <tr><td>07</td><td>The Switch</td></tr>
+          <tr><td>10</td><td>The Geometry Default</td></tr>
+          <tr><td>13</td><td>Learning Replaces Programming</td></tr>
+          <tr><td>16</td><td>The Observer Problem</td></tr>
+        </table>
+        <p class="caption">Six of the sixteen stations. <a href="calculemicha/">See them all.</a></p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="tools">
-    <div class="section-inner">
-      <h2>Tools</h2>
-      <div class="tool-cards">
-        <div class="tool-card">
-          <h3>rhombic</h3>
-          <div class="tool-meta">827 tests · MPL-2.0 · Python 3.10–3.12</div>
-          <p>Lattice topology benchmarks proving cubic networks leave 6.1× connectivity
-            on the table. TeLoRA neural module with cybernetic Steersman feedback.
-            Both released papers live here.</p>
-          <a href="https://github.com/tasumermaf/rhombic">GitHub</a> ·
-          <a href="https://pypi.org/project/rhombic/">PyPI</a> ·
-          <a href="https://huggingface.co/spaces/timotheospaul/rhombic">Demo</a>
-        </div>
-        <div class="tool-card">
-          <h3>The Adversary</h3>
-          <div class="tool-meta">v2 · CHECK/FIND/VERIFY · MPL-2.0</div>
-          <p>Agent-driven adversarial paper audit framework, now a three-stage
-            engine. Its Asset-1 ladder ran 7 rounds across 19 lenses: 117 confirmed
-            findings, 92 fixed, every disposition on record.</p>
-          <a href="https://github.com/tasumermaf/the-adversary">GitHub</a>
-        </div>
-        <div class="tool-card">
-          <h3>LIOTHIL</h3>
-          <div class="tool-meta">MIT</div>
-          <p>Research environment scaffold for Claude Code. Domain knowledge injection,
-            multi-agent orchestration, epistemic charter enforcement.</p>
-          <a href="https://github.com/tasumermaf/LIOTHIL">GitHub</a>
-        </div>
+<section id="method">
+  <div class="wrap">
+    <p class="section-label">Method</p>
+    <h2>How a result earns its place</h2>
+    <p class="section-lede">The method is the product. A finding that cannot be checked by someone else is treated as a draft.</p>
+    <ol class="method">
+      <li><strong>Register first.</strong>Hypotheses, pass criteria and analysis choices are fixed in a dated record before the data exists. The registered text is never revised. A deviation is a dated amendment beside it.</li>
+      <li><strong>Refuse partial data.</strong>Analysis tools will not run on an incomplete experiment. The interlock is in the code, so no early look can steer a result.</li>
+      <li><strong>Run the controls first.</strong>Null models and positive controls are calibrated before any trained arm. A test that cannot detect a planted effect is not allowed to report an absent one.</li>
+      <li><strong>Separate maker and referee.</strong>Designs are reviewed by an independent referee with no shared context, and its rulings are recorded word for word. Headline numbers are derived again from the raw items.</li>
+      <li><strong>Audit adversarially.</strong>Each paper passes through repeated hostile review before release. The ladder for <em>The Gauge Is the Obstacle</em> confirmed 117 findings and fixed 92, and every disposition is on record.</li>
+      <li><strong>Correct in the open.</strong>Retractions, errata and failed predictions are published beside the claims they change. Our own control narrowed our best-known lattice claim, and the narrower claim is the one we state.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="tools" class="tint">
+  <div class="wrap">
+    <p class="section-label">Tools</p>
+    <h2>Open instruments</h2>
+    <div class="grid-3">
+      <article class="card">
+        <p class="meta">Python · MPL-2.0 · v0.3.1</p>
+        <h3>rhombic</h3>
+        <p>Lattice topology benchmarks across graph theory, spatial operations and signal processing, with both released papers, their data and their audit records.</p>
+        <p class="links"><a href="https://github.com/tasumermaf/rhombic">GitHub</a><a href="https://pypi.org/project/rhombic/">PyPI</a><a href="https://huggingface.co/spaces/timotheospaul/rhombic">Demo</a></p>
+      </article>
+      <article class="card ox">
+        <p class="meta">Python · research licence · 0.1.0</p>
+        <h3>crossroads-state</h3>
+        <p>An exact-state test environment with no dependencies beyond the standard library: exact fractions, an ordered reader, a carried reference, and replay of a full journal in both directions.</p>
+        <p class="links"><a href="https://github.com/tasumermaf/crossroads-state">GitHub</a><a href="https://huggingface.co/spaces/timotheospaul/crossroads-laboratory">Laboratory</a></p>
+      </article>
+      <article class="card">
+        <p class="meta">MPL-2.0</p>
+        <h3>The Adversary</h3>
+        <p>An agent-driven framework for auditing a paper against its own evidence, in three stages: check, find, verify. It produced the audit ladders for our released papers.</p>
+        <p class="links"><a href="https://github.com/tasumermaf/the-adversary">GitHub</a></p>
+      </article>
+      <article class="card ox">
+        <p class="meta">MIT</p>
+        <h3>LIOTHIL</h3>
+        <p>A scaffold for building a research environment around a coding agent: domain knowledge, multi-agent orchestration and an explicit charter for marking what is verified and what is not.</p>
+        <p class="links"><a href="https://github.com/tasumermaf/LIOTHIL">GitHub</a></p>
+      </article>
+      <article class="card">
+        <p class="meta">MPL-2.0</p>
+        <h3>meridian</h3>
+        <p>The harness for a time-keeping instrument that reads five traditional systems from the sun's actual position, with typed output and no value restated in prose.</p>
+        <p class="links"><a href="https://github.com/tasumermaf/meridian">GitHub</a></p>
+      </article>
+      <article class="card ox">
+        <p class="meta">Channel</p>
+        <h3>Films and recordings</h3>
+        <p>The Calculemicha audiobook, the Book of Crossroads film and, as they are released, walkthroughs of the experiments.</p>
+        <p class="links"><a href="https://www.youtube.com/@tasumermaf">YouTube</a><a href="https://timotheospaul.substack.com">Substack</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <p class="section-label">Work with us</p>
+    <h2>Engagements</h2>
+    <p class="section-lede">We take a small number of engagements at a time. Each begins the way the research does: by finding the default nobody chose and measuring the alternative.</p>
+    <div class="grid-3">
+      <article class="card ox">
+        <p class="meta">Advisory</p>
+        <h3>Applied cybernetics</h3>
+        <p>Audits of AI systems, agent pipelines and the organizations around them. We look for where knowledge is lost in hand-off, where feedback is missing, and where an inherited structure is costing performance. You receive the measurements and the alternative.</p>
+      </article>
+      <article class="card">
+        <p class="meta">Production</p>
+        <h3>Fine-tuning methodology</h3>
+        <p>Adapter training for image and video models, built for production. Our paired and control method reaches character-consistent 1080p video from 10 to 30 short clips, and has been deployed with major film and entertainment studios under confidentiality.</p>
+      </article>
+      <article class="card ox">
+        <p class="meta">By agreement</p>
+        <h3>Private training research</h3>
+        <p>Beyond the published work we develop training methods for models that must carry a complete state through a sequence of changes and return exactly, with every claim checked by independent replay. These methods are unpublished and are discussed only under a written agreement.</p>
+      </article>
+    </div>
+    <p class="note" style="margin-top:26px;max-width:48em"><strong>Licensing.</strong> The rhombic library and our audit tools are open source. Crossroads State is free for noncommercial study, teaching and academic research under the TASUMER MAF Research and Enterprise License. Any enterprise use, including internal evaluation, requires a written agreement and payment. <a href="https://github.com/tasumermaf/crossroads-state/blob/main/LICENSING.md">Read the terms.</a></p>
+  </div>
+</section>
+
+<section id="people" class="tint">
+  <div class="wrap">
+    <p class="section-label">People</p>
+    <h2>Who does the work</h2>
+    <div class="people">
+      <div class="person">
+        <p class="role">Founder and principal investigator</p>
+        <h3>Timothy Paul Bielec</h3>
+        <p>Applied cyberneticist and AI architect. Co-founder of Promptcrafted, with production credits in generative film and a background in music. Writes as Timotheos Paul.</p>
+      </div>
+      <div class="person">
+        <p class="role">Co-author</p>
+        <h3>Minta Carlson</h3>
+        <p>Creative AI architect and co-founder of Promptcrafted. Co-author of <em>The Gauge Is the Obstacle</em> and <em>Typed State Beats Prose</em>.</p>
+      </div>
+      <div class="person">
+        <p class="role">Research intelligence</p>
+        <h3>Meridian</h3>
+        <p>The program's research collaborator and custodian of its records. Author of <em>Calculemicha</em>. Its work is disclosed wherever it appears.</p>
+      </div>
+      <div class="person">
+        <p class="role">Research intelligence</p>
+        <h3>Kallisti</h3>
+        <p>Builder of the Crossroads engine, its laboratory and its exact tests, working in a separate environment so that results can be checked across two independent systems.</p>
       </div>
     </div>
-  </section>
+    <p class="note" style="margin-top:22px;max-width:46em">Cybernetics takes its name from κυβερνήτης, the steersman, who governs by reading and correcting and not by command. TASUMER MAF is named for the same figure.</p>
+  </div>
+</section>
 
-  <section id="circuit">
-    <div class="section-inner">
-      <h2>The Circuit</h2>
-      <p>The autopoietic loop: each stage produces the next. The enterprise
-        is the thesis made organizational.</p>
-      <div class="circuit-container">
-        <div class="circuit-ring">
-          <svg class="circuit-svg" viewBox="0 0 380 380">
-            <defs>
-              <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-                <polygon points="0 0, 10 3.5, 0 7" fill="#FFD700" opacity="0.7" />
-              </marker>
-            </defs>
-            <!-- Research → Evidence -->
-            <path d="M 229,83 Q 262,55 268,103" stroke="#FFD700" stroke-width="1.5" fill="none" opacity="0.4" marker-end="url(#arrowhead)" />
-            <!-- Evidence → Consulting -->
-            <path d="M 303,170 Q 338,190 303,210" stroke="#FFD700" stroke-width="1.5" fill="none" opacity="0.4" marker-end="url(#arrowhead)" />
-            <!-- Consulting → Revenue -->
-            <path d="M 268,278 Q 262,325 229,298" stroke="#FFD700" stroke-width="1.5" fill="none" opacity="0.4" marker-end="url(#arrowhead)" />
-            <!-- Revenue → Experiments -->
-            <path d="M 151,298 Q 118,325 112,278" stroke="#FFD700" stroke-width="1.5" fill="none" opacity="0.4" marker-end="url(#arrowhead)" />
-            <!-- Experiments → Products -->
-            <path d="M 77,210 Q 42,190 77,170" stroke="#FFD700" stroke-width="1.5" fill="none" opacity="0.4" marker-end="url(#arrowhead)" />
-            <!-- Products → Research -->
-            <path d="M 112,103 Q 118,55 151,83" stroke="#FFD700" stroke-width="1.5" fill="none" opacity="0.4" marker-end="url(#arrowhead)" />
-          </svg>
-          <div class="circuit-node active">Research</div>
-          <div class="circuit-node">Evidence</div>
-          <div class="circuit-node">Consulting</div>
-          <div class="circuit-node">Revenue</div>
-          <div class="circuit-node">Experiments</div>
-          <div class="circuit-node">Products</div>
-        </div>
-      </div>
+<section id="contact" class="contact">
+  <div class="wrap">
+    <p class="section-label">Contact</p>
+    <h2>Start with the question you cannot settle.</h2>
+    <p class="narrow">For engagements, enterprise licences, research collaboration or press, write to <a href="mailto:timothy@promptcrafted.com">timothy@promptcrafted.com</a>. Tell us what the system is, what you believe about it, and what evidence would change your mind.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:timothy@promptcrafted.com">Write to us</a>
+      <a class="btn" href="https://github.com/tasumermaf">GitHub</a>
+      <a class="btn" href="https://www.youtube.com/@tasumermaf">YouTube</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="principles">
-    <div class="section-inner">
-      <h2>Principles</h2>
-      <ol class="principles-list">
-        <li><strong>Feedback, not force.</strong> The steersman reads the wind and adjusts. We demonstrate alternatives. The client steers.</li>
-        <li><strong>Only variety absorbs variety.</strong> A six-connected lattice cannot regulate twelve-fold complexity. When a system fails under load, the fix is geometric.</li>
-        <li><strong>Irreducibility.</strong> 1093 is prime. The value proposition is one thing, whole. Not decomposable into simpler products.</li>
-        <li><strong>The geometry is the argument.</strong> No borrowed aesthetics, no inflated claims. Here are the results. They speak for themselves.</li>
-        <li><strong>Eat your own cooking.</strong> The way you build a tool should embody its thesis. Meta-coherence separates serious work from cargo cult.</li>
-        <li><strong>Sparse results are data.</strong> A test that shows no advantage is a finding. An audit that finds nothing wrong is a deliverable.</li>
-        <li><strong>Cost is always reported alongside benefit.</strong> 2.4× connectivity at ~2× the edges. We say both.</li>
-        <li><strong>Open methodology, proprietary results.</strong> The recipe is free. The spice is ours.</li>
-      </ol>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p>TASUMER MAF · Promptcrafted LLC · Los Angeles</p>
+      <p class="prime">1093 is prime.</p>
     </div>
-  </section>
-
-  <footer>
-    <div class="section-inner">
-      <p class="footer-brand">TASUMER MAF — Promptcrafted LLC · Los Angeles</p>
-      <p class="footer-meta"><a href="https://github.com/tasumermaf">GitHub</a> · <a href="https://pypi.org/project/rhombic/">PyPI</a> · <a href="https://huggingface.co/spaces/timotheospaul/rhombic">HF Space</a></p>
-      <p class="footer-meta"><a href="https://study.tasumermaf.com/">Initiate Library / Biblioteca degli iniziati</a></p>
-      <p class="footer-prime">1093 = prime.</p>
+    <div>
+      <p><a href="https://github.com/tasumermaf">GitHub</a><a href="https://www.youtube.com/@tasumermaf">YouTube</a><a href="https://timotheospaul.substack.com">Substack</a><a href="https://huggingface.co/timotheospaul">Hugging Face</a><a href="https://pypi.org/project/rhombic/">PyPI</a></p>
+      <p><a href="https://study.tasumermaf.com/pan/">Initiate Library / Biblioteca degli iniziati</a></p>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="rd.js"></script>
 </body>
 </html>

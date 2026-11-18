@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Rhombic dodecahedron with one face filled">
+<polygon points="49.57,144.49 112.83,106.48 128.00,41.58 64.74,79.59" fill="#F5F0E8" fill-opacity="0.55"/>
+<polygon points="49.57,144.49 112.83,192.90 128.00,214.42 64.74,166.01" fill="#F5F0E8" fill-opacity="0.55"/>
+<polygon points="206.43,111.51 191.26,89.99 176.09,154.89 191.26,176.41" fill="#F5F0E8" fill-opacity="0.55"/>
+<polygon points="49.57,144.49 112.83,106.48 176.09,154.89 112.83,192.90" fill="#B34444" fill-opacity="1"/>
+<polygon points="128.00,41.58 191.26,89.99 176.09,154.89 112.83,106.48" fill="#F5F0E8" fill-opacity="0.55"/>
+<polygon points="128.00,214.42 191.26,176.41 176.09,154.89 112.83,192.90" fill="#F5F0E8" fill-opacity="0.55"/>
+<line x1="128.00" y1="41.58" x2="143.17" y2="63.10" stroke="#3D3D6B" stroke-width="1.1" stroke-dasharray="4 4" stroke-opacity="0.45"/>
+<line x1="206.43" y1="111.51" x2="143.17" y2="63.10" stroke="#3D3D6B" stroke-width="1.1" stroke-dasharray="4 4" stroke-opacity="0.45"/>
+<line x1="128.00" y1="214.42" x2="143.17" y2="149.52" stroke="#3D3D6B" stroke-width="1.1" stroke-dasharray="4 4" stroke-opacity="0.45"/>
+<line x1="143.17" y1="149.52" x2="206.43" y2="111.51" stroke="#3D3D6B" stroke-width="1.1" stroke-dasharray="4 4" stroke-opacity="0.45"/>
+<line x1="143.17" y1="63.10" x2="79.91" y2="101.11" stroke="#3D3D6B" stroke-width="1.1" stroke-dasharray="4 4" stroke-opacity="0.45"/>
+<line x1="143.17" y1="149.52" x2="79.91" y2="101.11" stroke="#3D3D6B" stroke-width="1.1" stroke-dasharray="4 4" stroke-opacity="0.45"/>
+<line x1="79.91" y1="101.11" x2="64.74" y2="79.59" stroke="#3D3D6B" stroke-width="1.1" stroke-dasharray="4 4" stroke-opacity="0.45"/>
+<line x1="79.91" y1="101.11" x2="64.74" y2="166.01" stroke="#3D3D6B" stroke-width="1.1" stroke-dasharray="4 4" stroke-opacity="0.45"/>
+<line x1="49.57" y1="144.49" x2="112.83" y2="106.48" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="112.83" y1="106.48" x2="128.00" y2="41.58" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="128.00" y1="41.58" x2="64.74" y2="79.59" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="64.74" y1="79.59" x2="49.57" y2="144.49" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="112.83" y1="192.90" x2="49.57" y2="144.49" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="112.83" y1="192.90" x2="128.00" y2="214.42" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="128.00" y1="214.42" x2="64.74" y2="166.01" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="64.74" y1="166.01" x2="49.57" y2="144.49" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="206.43" y1="111.51" x2="191.26" y2="89.99" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="191.26" y1="89.99" x2="176.09" y2="154.89" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="191.26" y1="176.41" x2="176.09" y2="154.89" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="191.26" y1="176.41" x2="206.43" y2="111.51" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="176.09" y1="154.89" x2="112.83" y2="106.48" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="176.09" y1="154.89" x2="112.83" y2="192.90" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="128.00" y1="41.58" x2="191.26" y2="89.99" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="128.00" y1="214.42" x2="191.26" y2="176.41" stroke="#3D3D6B" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
